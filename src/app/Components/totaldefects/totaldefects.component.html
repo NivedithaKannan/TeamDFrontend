@@ -1,0 +1,133 @@
+<div>
+  <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="defect_id">
+    <mat-header-cell *matHeaderCellDef> Defect ID</mat-header-cell> 
+    <mat-cell *matCellDef="let element">{{element.defect_id}}</mat-cell>
+  </ng-container>
+ 
+  <ng-container matColumnDef="teamId">
+    <mat-header-cell *matHeaderCellDef>Team ID</mat-header-cell> 
+    <mat-cell *matCellDef="let element">{{element.teamId}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="newValue">
+    <mat-header-cell *matHeaderCellDef>New Defects</mat-header-cell> 
+    <mat-cell *matCellDef="let element">{{element.newValue}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="high">
+    <mat-header-cell *matHeaderCellDef>High</mat-header-cell> 
+    <mat-cell *matCellDef="let element">{{element.high}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="medium">
+    <mat-header-cell *matHeaderCellDef>Medium</mat-header-cell> 
+    <mat-cell *matCellDef="let element">{{element.medium}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="low">
+    <mat-header-cell *matHeaderCellDef>Low</mat-header-cell> 
+    <mat-cell *matCellDef="let element">{{element.low}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="fixed">
+    <mat-header-cell *matHeaderCellDef>Fixed</mat-header-cell> 
+    <mat-cell *matCellDef="let element">{{element.fixed}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="inTesting">
+    <mat-header-cell *matHeaderCellDef>In Testing</mat-header-cell> 
+    <mat-cell *matCellDef="let element">{{element.inTesting}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="closed">
+    <mat-header-cell *matHeaderCellDef>Closed</mat-header-cell> 
+    <mat-cell *matCellDef="let element">{{element.closed}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="testFailed">
+    <mat-header-cell *matHeaderCellDef>Test Failed</mat-header-cell> 
+    <mat-cell *matCellDef="let element">{{element.testFailed}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="grandTotal">
+    <mat-header-cell *matHeaderCellDef>Grand Total</mat-header-cell> 
+    <mat-cell *matCellDef="let element">{{element.grandTotal}}</mat-cell>
+  </ng-container>
+
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;">
+</mat-row>
+</mat-table>
+</div>
+
+
+
+
+
+<!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+        <!-- defect_id: number;
+        teamId:number;
+        newValue:number;
+        high: number;
+        medium:number;
+        low:number;
+        fixed:number;
+        inTesting:number;
+        closed:number;
+        testFailed:number;
+        grandTotal:number; -->
+  <!-- Position Column -->
+  
+
+
+
+
+
+<!-- <div class="container">
+  <table border="3">
+    <tr>
+       <th>Defect ID</th>
+    <th>Team ID</th>
+    <th>New Defects</th>
+    <th>High</th>
+    <th>medium</th>
+    <th>low</th>
+    <th>fixed</th>
+    <th>In Testing</th>
+    <th>Closed</th>
+    <th>Test Failed</th>
+    <th>Grand Total</th>
+    </tr>
+    <tr *ngFor ="let defect of tdefects">
+      <td>{{defect.defect_id}}</td>
+      <td>{{defect.teamId}}</td>
+      <td>{{defect.newValue}}</td>
+      <td>{{defect.high}}</td>
+      <td>{{defect.medium}}</td>
+      <td>{{defect.low}}</td>
+      <td>{{defect.fixed}}</td>
+      <td>{{defect.inTesting}}</td>
+      <td>{{defect.closed}}</td>
+      <td>{{defect.testFailed}}</td>
+      <td>{{defect.grandTotal}}</td>
+    </tr>
+  
+  </table>
+</div> -->
+
+<!-- defect_id: number;
+    teamId:number;
+    newValue:number;
+    high: number;
+    medium:number;
+    low:number;
+    fixed:number;
+    inTesting:number;
+    closed:number;
+    testFailed:number;
+    grandTotal:number; -->
+  
